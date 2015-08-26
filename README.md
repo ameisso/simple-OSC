@@ -25,4 +25,4 @@ Simple library for sending and receiving OSC messages from Photon.
 - Another port of the osc library [exist]( https://github.com/trublion/sparkcore_osc).
 
 --------------------------
-[[Antoine M*](ameisso.fr)
+[[Antoine M*]](ameisso.fr)
