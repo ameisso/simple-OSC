@@ -41,15 +41,15 @@ void OSCMessage::fill(char incomingByte)
 
 bool OSCMessage::parse()
 {
-    Serial.print("got : ");
+    // Serial.print("got : ");
     int addressLocation = -1;
     int typesLocation = -1;
     int dataLocation = -1;
-    for(int i = 0 ; i < incomingBufferSize ; i++)
-    {
-        Serial.print (incomingBuffer[i],DEC);  Serial.print(" ");
-    }
-    Serial.println();
+    /*for(int i = 0 ; i < incomingBufferSize ; i++)
+     {
+     Serial.print (incomingBuffer[i],DEC);  Serial.print(" ");
+     }
+     Serial.println();*/
     for(int i = 0 ; i < incomingBufferSize ; i++)
     {
         if (incomingBuffer[i] == 44)
