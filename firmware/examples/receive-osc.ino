@@ -7,6 +7,8 @@ unsigned int inPort = 8001;
 void setup()
 {
   Serial.begin(115200);
+  udp.begin(inPort);
+    
   while (!WiFi.ready())
   {
     delay(500);
@@ -40,5 +42,6 @@ void loop()
 
 void PING(OSCMessage &inMessage)
 {
+    Serial.println("/ping ");
 //Do something
 }

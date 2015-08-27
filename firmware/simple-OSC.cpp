@@ -1,4 +1,4 @@
-#include "simple-OSC.h"
+#include "simple-OSC/simple-OSC.h"
 
 OSCMessage::OSCMessage()
 {

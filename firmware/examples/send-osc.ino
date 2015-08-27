@@ -2,14 +2,13 @@
 
 UDP udp;
 
-IPAddress outIp(192, 168, 0, 14);
-unsigned int outPort = 1234;
+IPAddress outIp(192, 168, 0, 14);//your computer IP
+unsigned int outPort = 1234; //computer incoming port
 
 void setup()
 {
     Serial.begin(115200);
-    udp.begin(inPort);
-    
+    udp.begin(0);//necessary even for sending only.
     while (!WiFi.ready())
     {
         delay(500);
