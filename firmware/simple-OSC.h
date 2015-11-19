@@ -32,5 +32,6 @@ public:
     void addInt(int value);
     void addFloat(float value);
     void addString(const char * value);
+    void clear();
     void send(UDP &udp, IPAddress remoteIP, unsigned int outPort);
 };

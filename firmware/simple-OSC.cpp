@@ -170,6 +170,14 @@ void OSCMessage::addString(const char * value)
     }
 }
 
+///CLEAR MESSAGE
+void OSCMessage::clear()
+{
+    outputDatas = NULL;
+    outputDatasSize = 0;
+    outputTypes = NULL;
+}
+
 void OSCMessage::prinOutputDatas()
 {
     Serial.print(outputAddress);    Serial.print(" ");      Serial.print (outputDatasSize);  Serial.println(" : ");
