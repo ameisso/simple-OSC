@@ -22,6 +22,7 @@ public:
     OSCMessage();
     OSCMessage(const char * address);
     ~OSCMessage();
+    void empty();
     void setupMessage();
     void fill(char);
     bool parse();

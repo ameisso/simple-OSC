@@ -24,6 +24,11 @@ void OSCMessage::setupMessage()
 //DESTRUCTOR
 OSCMessage::~OSCMessage()
 {
+    empty();
+}
+
+OSCMessage::empty()
+{
     free(incomingBuffer);
     free(inputDatas);
     free(outputDatas);
