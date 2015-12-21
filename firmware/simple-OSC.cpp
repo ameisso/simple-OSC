@@ -27,7 +27,7 @@ OSCMessage::~OSCMessage()
     empty();
 }
 
-OSCMessage::empty()
+void OSCMessage::empty()
 {
     free(incomingBuffer);
     free(inputDatas);
