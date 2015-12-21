@@ -1,6 +1,6 @@
 {
     "name": "simple-OSC",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "AntoineM* <ameisso@gmail.com>",
     "license": "MIT",
     "description": "simple osc (open sound control) to send and receive OSC messages to photons."
